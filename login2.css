@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+#background{
+    display: flex;
+  flex-direction: column;
+}
+* {
+    box-sizing: border-box;
+}
+.cover_img{
+width: 100%;
+height: 215px;
+background:url("cover1.jpg");
+}
+.body_web{
+    display: flex;
+    background: white;
+    width: 100%;
+    height:355px;
+    align-items:flex-start;
+    font-family: 'Roboto', sans-serif !important;
+}
+#in_body1{
+    width: 100%;
+    max-width: 468px;
+    margin-left:10%;
+}
+#box{
+    width:50%;
+    background-color:lightgray;
+    border-radius:4px;
+    margin-top:5%;
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    margin-top:2%;
+    font-weight: bold;
+    font-size:150%;
+    margin-left:10%;
+}
+#input1{
+    width: 50%;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 4px;
+    margin-top:5%;
+    font-size: 17px;
+    border: none;
+}
+#input2{
+    width: 50%;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 5px 0;
+    margin-top:5%;
+    font-size: 17px;
+    border: none;
+}
+#button{
+display: flex;
+align-items: flex-end;
+margin-top:10%;
+}
+#sign_up{
+    width:30%;
+    font-size: 17px;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 5px 0;
+    border: none;
+    background:  #00b33c;
+}
+#register{
+    width:30%;
+    font-size: 17px;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 5px 0;
+    border:none;
+    background-color:#ff751a;
+    margin-left:5%;
+    border: none;
+}
+#footer{
+    display: flex;
+    align-items:center;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold;
+    background:linear-gradient(180deg, #FCFCFC 0%, rgba(251, 251, 251, 0) 68.23%), #FFCB8E;
+    color:black;
+    width: 100%;
+    height: 180px;
+    margin-top:10%;
+  }
+  .facebook{
+    font-size:150%;
+    
+    margin-left:5%;
+ }
+ .instagram{
+   font-size:150%;
+  
+   margin-left:5%;
+ }
+ .STRAVA{
+   font-size:150%;
+   
+   margin-left:5%;
+ }
+ .logo{
+  width:7%;
+  margin-left:50%;
+  border-radius:20%;
+ }
+
+/*sign up*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius:13px;
+  }
+  
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color:black;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    border-radius:6%;
+    background: linear-gradient(180deg, #525252 0%, rgba(255, 255, 255, 0) 100%), #FF7A00;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
