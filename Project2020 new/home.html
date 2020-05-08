@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script> -->
+    <script src = "https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"> </script>
+    <script src = "https://www.gstatic.com/firebasejs/7.12.0/firebase-storage.js"> </script>
+    <script src = "https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"> </script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none;" id="mySidebar">
+        <h1 class="w3-xxxlarge w3-text-theme" style="color:#ff751a !important;">RUFL</h1>
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="challenge.html" class="w3-bar-item w3-button">CHALLENGE</a>
+        <a href="#" class="w3-bar-item w3-button" id="logOut">LOG OUT</a>
+      </nav>
+      <!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader" style=" background:url('cover1.jpg') !important; width:100%;height:215px;">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+    </header>
+    <div id="background">
+    <div class="head" style="text-align:center;"><span style="color: #ff751a;font-weight:bold;">RUFL</span> LÀ GÌ?</div>
+    <div id="content1">
+        <span class="text">
+           <span class="team_name" style="color: #ff751a;">RUFL</span>
+            ra đời với mục đích thúc đẩy và tạo động lực 
+            <br>
+            giúp cộng đồng hình thành thói quen tập luyện thể thao 
+            <br>
+            mỗi ngày để có sức khỏe tốt, góp phần xây dựng văn hoá 
+            <br>
+            và lối sống lành mạnh của người Việt."
+           <br>
+           Hãy tham gia cùng
+           <span class="team_name" style="color:#ff751a;">RUFL</span>
+           lan tỏa tinh thần này và hãy 
+           <br>
+           trở thành nguồn động lực lớn lao cho chúng tôi!"
+        </span>
+        <img src="content.png" class="img_content">
+    </div>
+    <div class="head2">LÀM THẾ NÀO ĐỂ THAM GIA <span style="color: #ff751a;font-weight:bold;">RUFL</span> ?</div>
+    <div class="head3">Thật đơn giản chỉ cần vài bước là bạn đã có thể tham gia với chúng tôi!</div>
+    <div id="content2">
+        <img src="computer.png" class="img2_content">
+        <div class="button_join">
+            <div class="sort1">
+                <button class="push" onclick="window.location.href='‪F:/MindX66/web/login2.html';">1</span></button>
+                <div>
+                    <span style="font-weight: bold;">Đăng ký thành viên</span> <br>
+                    Đăng ký thành viên với tư cách là người chạy
+                </div>
+            </div>
+            <div class="sort1" onclick="window.location.href='F:/MindX66/web/login2.html';">
+                <button class="push">2</button>
+                <div>
+                    <span style="font-weight: bold;">Tham gia thử thách</span> <br>
+                    Hãy lựa chọn thử thách phù hợp với bản thân
+                </div>
+            </div>
+            <div class="sort1" onclick="window.location.href='https://www.strava.com/';">
+                <button class="push">3</button>
+                <div>
+                    <span style="font-weight: bold;">Chạy ngay thôi</span> <br>
+                    Kết nối tài khoản STRAVA để ghi lại các dữ liệu về
+                    <br>
+                    cuộc chạy của bạn
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button_join2">
+        <button class="push2" onclick="window.location.href='challenge.html';">KHÁM PHÁ THỬ THÁCH</button>
+    </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+  <h1 class="w3-jumbo"><b>Features</b></h1>
+  <p>RUFL Good for healthy </p>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
+      <p>Fast</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+      <p>Loved</p>
+    </div>
+    
+    <div class="w3-col s3">
+      <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
+      <p>Power</p>
+    </div> 
+    <div class="w3-col s3">
+      <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+      <p>Global</p>
+    </div>
+  </div>
+  <div class="w3-row" style="margin-top:64px">
+      <div class="w3-col s3">
+      <i class="fa fa-area-chart"  style="font-size:60px;color:lightblue;"></i>
+      <p>Healthy</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-user w3-text-sand w3-jumbo"></i>
+      <p>Safe</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
+      <p>Stabile</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
+      <p>Connected</p>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge" >
+        <div class="w3-section">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p class="w3-medium">Design by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">MindX Student</a></p>
+      </footer>
+      <script src="index2.js"></script>
+      <script src="index4.js"></script>
+      <script>
+        firebase.auth().onAuthStateChanged(function(user){
+          if(!user){
+            location.replace("ruflpage.html")
+          }
+          else{
+            console.log(user)
+          }
+        })
+      </script>
+</body>
+</html>

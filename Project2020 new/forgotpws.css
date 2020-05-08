@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.box-sizing{
+    width:50%;
+    height:300px;
+    margin: 30px;
+    background-color:rgb(242, 242, 242,0.6);
+    border:none;
+    margin-left: 25%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.box-sizing:hover{
+    background-color:rgb(179, 179, 179);
+}
+.form-control{
+    width: 95%;
+}
+#btn-resetPassword{
+    margin-bottom: 5%;
+}
+.div_1{
+    margin-left:5%;
+    margin-top: 5%;
+}
+#btn-resetPassword{
+    background: #ff751a;
+    color: white;
+    border: none;
+    width: 60%;
+}
+#btn-resetPassword:hover{
+    background-color: black;
+}
+.cover_background{
+    background:url('coverbody.jpg');
+    width:100%;
+    height:580px;
+}
+h1{
+    text-align: center;
+    margin-top:2%;
+    color:#ff751a ;
+    font-size: 500%;
+}

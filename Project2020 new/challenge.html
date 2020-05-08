@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="challenge.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script> -->
+    <script src = "https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"> </script>
+    <script src = "https://www.gstatic.com/firebasejs/7.12.0/firebase-storage.js"> </script>
+    <script src = "https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"> </script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none;" id="mySidebar">
+        <h1 class="w3-xxxlarge w3-text-theme" style="color:#ff751a !important;">RUFL</h1>
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="challenge.html" class="w3-bar-item w3-button">CHALLENGE</a>
+        <a href="#" class="w3-bar-item w3-button" id="logOut">LOG OUT</a>
+      </nav>
+      <!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader" style=" background:url('cover1.jpg') !important; width:100%;height:215px;">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+    </header>
+  <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:470px">
+      <i class="fa fa-gamepad"  style="font-size:120px;margin-top:10%;"></i>
+      <div class="text-note">
+      <p>Chạy quanh Hồ Gươm</p>
+      <p>Vật dụng cần mang: Smartphone,khăn và nước</p>
+      <p>Chạy quanh hồ gươm bằng cách sử dụng ứng dụng</p>
+      <p>Strava để định vị, sau đó hãy gửi điều này cho RUFL</p></div>
+      <button class ="play_game" id="play">PLAY</button>
+      </div>
+    </div>
+    
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:470px">
+      <i class="fa fa-gamepad"  style="font-size:120px;margin-top:10%;"></i>
+      <div class="text-note">
+      <p>Chạy quanh Hồ Gươm</p>
+      <p>Vật dụng cần mang: Smartphone,khăn và nước</p>
+      <p>Chạy quanh hồ gươm bằng cách sử dụng ứng dụng</p>
+      <p>Strava để định vị, sau đó hãy gửi điều này cho RUFL</p></div>
+      <button class ="play_game" id="play">PLAY</button>
+      </div>
+    </div>
+    
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:470px">
+      <i class="fa fa-gamepad"  style="font-size:120px;margin-top:10%;"></i>
+      <div class="text-note">
+      <p>Chạy quanh Hồ Gươm</p>
+      <p>Vật dụng cần mang: Smartphone,khăn và nước</p>
+      <p>Chạy quanh hồ gươm bằng cách sử dụng ứng dụng</p>
+      <p>Strava để định vị, sau đó hãy gửi điều này cho RUFL</p></div>
+      <button class ="play_game" id="play">PLAY</button>
+      </div>
+    </div>
+    </div>
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge" style="margin-top:1.2%;">
+        <div class="w3-section">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p class="w3-medium">Design by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">MindX Student</a></p>
+      </footer>
+    <script src="index2.js"></script>
+    <script src="index4.js"></script>
+    <script>
+       firebase.auth().onAuthStateChanged(function(user){
+          if(!user){
+            location.replace("ruflpage.html")
+          }
+          else{
+            console.log(user)
+          }
+        })
+    </script>
+    <script src="challenge.js"></script>
+</body>
+</html>
